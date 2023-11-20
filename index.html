@@ -10,10 +10,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./index.js"></script>
   </head>
-  <body>
+  <body class="bg-slate-50">
     <div class="max-w-7xl m-auto">
-      <header class="h-16 border-b">
-        <div class="flex justify-between items-center">
+      <header class="sm:h-16 h-28 border-b">
+        <div class="max-sm:flex-col flex justify-between items-center">
           <div class="flex items-center">
             <img
               class="h-16"
@@ -39,14 +39,16 @@
         </div>
       </header>
       <main>
-        <section class="text-center my-20">
-          <h1 class="text-4xl">Looped While finding a better deal?</h1>
-          <p class="text-xl mt-5 mb-8">
+        <section class="text-center my-20 max-sm:my-10">
+          <h1 class="text-4xl max-sm:text-2xl">
+            Looped While finding a better deal?
+          </h1>
+          <p class="text-xl max-sm:text-base mt-5 mb-8">
             Well! that's what One Point is specialized in. <br />Here is your
             one stop solution for all best available deals on electronics.
           </p>
           <button
-            class="text-lg text-slate-100 border p-2 rounded-lg bg-logo-700 hover:bg-logo-800"
+            class="text-lg text-slate-100 max-sm:text-sm border p-2 rounded-lg bg-logo-700 hover:bg-logo-800"
           >
             Explore More
           </button>
@@ -133,7 +135,11 @@
           </div>
         </section>
       </main>
-      <footer></footer>
+      <footer>
+        <div class="text-lg text-center border-t mt-5 py-5">
+          <span>© One Point 2024</span>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
